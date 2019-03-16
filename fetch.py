@@ -3,6 +3,13 @@ import html
 import requests
 import re
 
+def format_str(l):
+	max_line = len(max(l))
+
+	for i in range(len(l)):
+		while len(l[i]) < max_line:
+			l[i] = " " + l[i] + " "
+
 line_len = 7 #The maximum nomber of words in one line
 text_color = ''
 type_of_quote = '“”' # '«»'
@@ -30,11 +37,10 @@ lines = []
 while words != []:
 	line = ' '.join(words[:line_len])
 	words = words[line_len:]
-	if words == []:
-		lines.append(line)
-	else:
-		lines.append(line+'\n')
+	lines.append(line)
 
+format_str(lines)
+lines = [i + '\n' for i in lines]
 file = open(file_name,'w')
 
 file.write(f'\033[{quote_color}m{type_of_quote[0]} \033[{text_color}m')

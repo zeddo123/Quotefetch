@@ -12,6 +12,6 @@ distro=$(uname -r | cut -d '-' -f3)
 cat<< END
 
 $quote
-	$y SHELL:$shell$b 	$y Distro:$distro$b
-	$y CPU:$cpu$b
+$y SHELL:$shell$b 	$y Distro:$distro$b
+$y CPU:$cpu$b
 END
