@@ -1,6 +1,3 @@
-[1;33m“ [m      In framing a government which is to be      
-administered by men over men the great difficulty
-     lies in this: You must first enable the     
-  government to control the governed, and in the  
-     next place, oblige it to control itself.     
-                                [1;33m”[m  Alexander Hamilton
+[1;33m“ [mLet us leave pretty women to men devoid
+            of imagination.            
+                           [1;33m”[m  Marcel Proust
